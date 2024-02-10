@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project forms</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <aside id="aside">
+        <div class="logo-page">
+            <img class="img-logo" src="./img/odin-project-logo.png" alt="Logo of the odin project">
+            <div id="odin">ODIN</div>
+        </div>
+    </aside>
+    <main id="main">
+        <div class="text">
+            <p><span>Attention:</span> This page is not a real online service. It is merely a web development skills 
+                development project. Any functionality or interaction present on this site is simulated and 
+                not connected to real systems or services. Please be aware that this is a learning and practice 
+                environment and does not offer real services or functionalities. Thank you for your understanding.</p>
+        </div>
+        <form class="form" action="">
+
+            <div class="form-class">
+             <h2>Lets to this</h2>
+            <div class="container">
+               
+            <div class="part-form">
+                <div class="label">
+                <label for="first-name">First Name:</label>
+                <input type="text" name="first-name" id="first-name" placeholder="First name" required/><br/>
+            </div>
+            <div class="label">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="emailmine@exemplo.com" required/><br/>
+            </div>
+            <div class="label">
+                <label for="password">Password:</label>
+                <input value="password" class="error" type="password" name="password" id="password" placeholder="Password" required/><br/>
+            </div>
+            </div>
+            <div class="part-form">
+                <div class="label">
+                <label for="last-name">Last name:</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Last name" required/><br/>
+                </div>
+                <div class="label">
+                <label for="tel">Telphone:</label>
+                <input type="tel" minlength="9" maxlength="13" name="tel" id="tel" placeholder="+258 82XZR0000" required/><br/>
+                </div>
+                <div class="label">
+                <label for="confirm-password">Confirm password:</label>
+                <input type="password" class='error' required name="confirm-password" pattern="" value="confirm-password" id="confirm-password" placeholder="Confirm password" />
+                <p class="text-infor"></p>
+            </div>
+            </div>
+            </div>
+        </div>
+            <button type="submit">Submit</button>
+            </form>
+            <p id="link-para">Already have an account? <a href="#index.html">Sign up</a></p>
+    </main>
+    <script src="./script/index.js"></script>
+</body>
+</html>
