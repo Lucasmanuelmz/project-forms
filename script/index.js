@@ -10,7 +10,7 @@ button.addEventListener("click", (e) => {
   let pass = passWord.value;
   let conf = confirmPass.value;
   let text = document.querySelector(".text-infor");
-  let validEmail = /\S+@\S+\.\S+/;
+  //let validEmail = /\S+@\S+\.\S+/;
 
   email.addEventListener("input", function (event) {
     if (email.validity.typeMismatch) {
@@ -48,12 +48,6 @@ button.addEventListener("click", (e) => {
         width: 20rem;`;
   } else if (lastName === ``) {
     text.textContent = `The lastname field is empty!`;
-    text.style.cssText = `background-color: #ddd; 
-        color: #f00000; 
-        padding: 5px; 
-        width: 20rem;`;
-  } else if (email === `` || !validEmail.test(email)) {
-    text.textContent = `The email field is empty!`;
     text.style.cssText = `background-color: #ddd; 
         color: #f00000; 
         padding: 5px; 
