@@ -61,6 +61,7 @@
                   type="password"
                   name="password"
                   id="password"
+                  pattern="^[a-z,A-Z]+[0-9]+$"
                   placeholder="Password"
                   required
                 /><br />
@@ -96,7 +97,7 @@
                   class="error"
                   required
                   name="confirm-password"
-                  pattern=""
+                  pattern="^[a-z,A-Z]+[0-9]+$"
                   value="confirm-password"
                   id="confirm-password"
                   placeholder="Confirm password"
@@ -106,7 +107,7 @@
             </div>
           </div>
         </div>
-        <button type="submit">Submit</button>
+        <button class="btn" type="submit">Submit</button>
       </form>
       <p id="link-para">
         Already have an account? <a href="#index.html">Sign up</a>

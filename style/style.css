@@ -18,13 +18,12 @@ body {
   padding: 0;
   display: flex;
   justify-content: space-between;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 aside#aside {
   width: var(--aside-width);
   height: 100vh;
-  background-color: #342517;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,19 +67,19 @@ img[class="img-logo"] {
 
 main#main {
   width: var(--width-main);
-  background-color: #f0f0f0;
+  background-color: #ECECEC;
   height: 100vh;
   box-sizing: border-box;
 }
 
 .form {
-  width: 63.5rem;
+  max-width: 63.5rem;
   box-sizing: border-box;
 }
 
 .form-class {
   width: 63.5rem;
-  background-color: #fffff0;
+  background-color: #fffefe;
   padding: 15px 40px;
   height: 60vh;
   box-shadow: 5px 5px 2px #ddd;
@@ -107,8 +106,8 @@ input:focus:valid {
   font-family: Norse-Bold;
 }
 
-button[type="submit"] {
-  background-color: #596d48;
+.btn {
+  background-color: #202bce;
   padding: 10px 30px;
   border-radius: 15px;
   cursor: pointer;
@@ -116,17 +115,20 @@ button[type="submit"] {
   margin-top: 20px;
   margin-left: 40px;
   font-size: 18px;
+  border: none;
+  color: #fffefe;
+  transition: background-color 1s alternate ease-in-out forwards;
 }
 
-button[type="submit"]:hover {
-  background-color: #232333;
+.btn:hover {
+  background-color: #200ec2;
 }
 
-button[type="submit"]:active {
-  background-color: #999435;
+.btn:active {
+  background-color: #cc280b;
 }
 
-p#link-para {
+#link-para {
   padding: 0 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
